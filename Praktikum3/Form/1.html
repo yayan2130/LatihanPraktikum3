@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FORM</title>
+</head>
+<script language="javascript">
+	function test()
+	{
+		var val1=document.kirim. T1. value
+		if (val1%2==0) 
+			document.kirim.T2.value="Bilangan Genap"
+		else 
+			document.kirim.T2.value="Bilangan Ganjil"
+	}
+</script>
+<body>
+<form method="post" name="kirim">
+	<p>BIL <input type="text" name="T1" size="20"> Merupakan BIL <input type="text" name="T2" size="20"></p>
+	<p><input type="button" value="tebak" name="B1" onclick=test()></p>
+</form>
+</body>
+</html>
